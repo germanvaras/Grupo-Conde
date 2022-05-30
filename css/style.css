@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+@font-face {
+  font-family: cocoSharpBold;
+  src: url(/fonts/Coco-Sharp-Extrabold-trial.ttf); }
+
+@font-face {
+  font-family: basic;
+  src: url(/fonts/Basic-Light.ttf); }
+
+h1 {
+  font-family: cocoSharpBold;
+  font-size: 4rem; }
