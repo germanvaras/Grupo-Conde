@@ -1,42 +1,24 @@
-@font-face {
-  font-family: cocoHeavy;
-  src: url(/fonts/Coco-Sharp-Heavy-trial.ttf); }
-
-@font-face {
-  font-family: cocoEBold;
-  src: url(/fonts/Coco-Sharp-Extrabold-trial.ttf); }
-
-@font-face {
-  font-family: cocoRegular;
-  src: url(/fonts/Coco-Sharp-Regular-trial.ttf); }
-
-@font-face {
-  font-family: basic;
-  src: url(/fonts/Basic-Light.ttf); }
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 62.5%; }
-
-h1, h2, h4 {
-  font-family: cocoEBold; }
-
-h3 {
-  font-family: cocoBold; }
-
-p, button {
-  font-family: cocoRegular; }
+  font-size: 62.5%;
+  font-family: 'Lato', sans-serif; }
 
 h1 {
   font-size: 5rem; }
 
 h2 {
-  font-size: 4rem; }
+  font-size: 4rem;
+  font-weight: 900; }
+
+h3 {
+  font-size: 3rem;
+  font-weight: 900; }
 
 p, button {
-  font-size: 2rem; }
+  font-size: 2rem;
+  font-weight: 400; }
 
 .section1__img--edificio {
   max-width: 100%; }
@@ -67,3 +49,15 @@ p, button {
     color: #ffffff; }
   .section4 .section4__h2 {
     color: #ffffff; }
+  .section4 .section4__imgp {
+    max-width: 100%; }
+
+.section6 {
+  background-color: #000000;
+  width: 100%; }
+  .section6 .section6__titulo {
+    color: #ffffff; }
+  .section6 .section6__p {
+    color: #ffffff; }
+  .section6 .section6__img {
+    padding: 10rem 10rem 5rem 0; }
