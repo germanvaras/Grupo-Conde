@@ -51,5 +51,17 @@ p,button{
     background-image: url(../img/fondo2.webp);
     width:100%; 
 }
-
+.section4{
+    background-color: #000000;
+    width: 100%;
+        .section4__img{
+            padding: 10rem 10rem 5rem 0
+        }
+        .section4__titulo{
+            color: #ffffff
+        }
+        .section4__h2{
+            color: #ffffff
+        }
+}
   
