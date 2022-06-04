@@ -16,12 +16,16 @@ h2{
 }
 h3{
     font-size: 3rem;
-
     font-weight: 700;
-
-    font-weight: 900;
+}
+p,button{
+    font-size: 2rem;
+    font-weight: 400;
 }
 
+.section1__img--edificio{
+    width: 100%;
+}
 .section2{
     background-color: #000000;
     color: #ffffff; 
