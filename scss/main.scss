@@ -1,5 +1,4 @@
 
-
 *{
     margin: 0;
     padding: 0;
@@ -51,5 +50,32 @@ p,button{
     background-image: url(../img/fondo.webp);
     width:100%; 
 }
-
-  
+.section4{
+    background-color: #000000;
+    width: 100%;
+        .section4__img{
+            padding: 10rem 10rem 5rem 0
+        }
+        .section4__titulo{
+            color: #ffffff
+        }
+        .section4__h2{
+            color: #ffffff
+        }
+        .section4__imgp{
+            max-width: 75px;
+        }
+}
+.section6{
+    background-color: #000000;
+    width: 100%;
+        .section6__titulo{
+            color: #ffffff
+        }
+        .section6__p{
+            color: #ffffff
+        }
+        .section6__img{
+            padding: 10rem 10rem 5rem 0
+        }
+}
