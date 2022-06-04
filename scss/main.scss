@@ -89,10 +89,15 @@ p,button{
             padding: 10rem 10rem 5rem 0
         }
         .section4__titulo{
-            color: #ffffff
+            color: #ffffff;
+            line-height: 70px;
+            font-size: 5rem;
+            letter-spacing: 3px;
+            
         }
         .section4__h2{
-            color: #ffffff
+            color: #ffffff;
+            letter-spacing: 1px;
         }
         .section4__imgp{
             max-width: 75px;
@@ -102,12 +107,21 @@ p,button{
     background-color: #000000;
     width: 100%;
         .section6__titulo{
-            color: #ffffff
+            color: #ffffff;
+            font-size: 5rem;
+            letter-spacing: 3px;
         }
         .section6__p{
-            color: #ffffff
+            color: #ffffff;
+            font-weight: 300;
         }
         .section6__img{
             padding: 10rem 10rem 5rem 0
         }
+        .section6__imgp{
+            width: 6.5rem;
+            margin-right: 2rem;
+            height: 5rem;
+        }
+        
 }
