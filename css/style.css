@@ -94,3 +94,18 @@ p, button {
     width: 6.5rem;
     margin-right: 2rem;
     height: 5rem; }
+
+.section7 {
+  background-image: url(../img/fondo.webp);
+  width: 100%;
+  color: #ffffff;
+  padding: 10rem 0; }
+  .section7 .section7__img {
+    padding: 0 15rem 10rem 7rem; }
+  .section7 .section7__imgp {
+    width: 6.5rem;
+    margin-right: 2rem;
+    height: 5rem; }
+  .section7 .section7__p {
+    color: #ffffff;
+    font-weight: 300; }
