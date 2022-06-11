@@ -30,11 +30,11 @@ input {
   width: 100%; }
 
 .header, .footer {
-  background-color: #ffffff9c;
+  background-color: #ffffff7c;
   width: 100%;
   display: flex;
   justify-content: space-around;
-  padding: 2rem 0; }
+  padding: 2rem; }
   .header .header__img_logo, .header .footer__img_logo, .footer .header__img_logo, .footer .footer__img_logo {
     max-width: 4.5rem;
     margin-left: 5rem; }
