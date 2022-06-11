@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+    width: 100%;
+}   
+
+h1 {
+    font-size: 5rem;
+
+}
+
+h2 {
+    font-size: 4rem;
+    letter-spacing: .5rem;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+p,
+button,
+input {
+    font-size: 2rem;
+    font-weight: 400;
+}
