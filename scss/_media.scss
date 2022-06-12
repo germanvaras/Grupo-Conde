@@ -1,0 +1,178 @@
+@media (max-width: 480px) {
+    .section2{
+        .section2__img{
+            padding: 2rem;
+        }
+        .section2__container{
+            padding: 1rem;
+            .section2__titulo{
+                font-size: 3rem ;
+                margin-left: 1rem;
+            }
+            .section2__p{
+                font-size: 2rem;
+                padding: 1rem; 
+            }
+            .section2__boton{
+                width: 50%;
+                margin-left: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+      
+    }
+    .section3{
+        padding:3rem;
+            h2{
+                font-size: 5rem;
+            }
+            .section3__casas, .section3__barrios, .section3__departamentos, .section3__loteos{
+                border-radius: 20%;
+                background-color: #ffffff1a;
+                border: solid 2px #00798e;
+                padding: 1rem;
+                margin-bottom: 2rem;
+                box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.609);
+                .section3__numeros{
+                    font-size: 3.5rem;
+                }
+                .section3__img, .section3__p{
+                    margin-top: 1rem;
+                }
+            }
+            .section3__barrios{
+                .section3__numeros{
+                    font-size: 3.5rem;
+                }
+                .section3__img, .section3__p{
+                    margin-top: 1rem;
+                }
+            }
+            .section3__loteos{
+                .section3__numeros{
+                    font-size: 3.5rem;
+                }
+                .section3__img, .section3__p{
+                    margin-top: 1rem;
+                    letter-spacing: 0.2px;
+                }
+            }
+            .section3__departamentos{
+                .section3__numeros{
+                    font-size: 3.5rem;
+                }
+                .section3__img, .section3__p{
+                    margin-top: 1rem;
+                }
+            }
+            
+    }
+    .section4{
+        padding: 2rem;
+        .section4__img{
+            padding: 1rem;
+        }
+        .section4__titulo{
+            font-size: 3.5rem;
+            text-align: center; 
+        }
+        .section4__container{
+            display: flex;
+            justify-content: center;
+                .section4__h2{
+                    font-size: 2rem;
+                    text-align: center;
+                }
+                .section4__imgp{
+                    max-width: 7rem;
+                }
+            }
+    }
+    .section5{
+        padding-bottom: 1rem;
+        .section5__titulo{
+            font-size: 5rem;
+            padding-top: 2rem;
+        }
+        .section5__container{
+            padding: 1rem 2rem;
+            width: 40rem;
+            margin: 0;
+        }
+   }
+   .section6{
+        .section6__img{
+            padding: 2rem;
+        }
+        .section6__titulo{
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .section6__container{
+            justify-content: center;
+            align-items: center;
+            padding: 1rem 2rem;
+            margin: 0;
+            .section6__p{
+                text-align: center;
+                margin-top: 1rem;
+            }
+        }
+    }
+    .section7{
+        .section7__map{
+            width: 30rem;
+            margin-bottom: 2rem;
+        }
+        .section7__container{
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            border-radius: 20%;
+            background-color: #ffffff1a;
+            border: solid 2px #00798e;
+            margin: 0 2rem 2rem 2rem;
+            box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.609);
+            .section7__p{
+                text-align: center;
+            }
+            .section7__boton{
+                width: 50%;
+            }
+        }
+
+    }
+    .section8{
+        .section8__titulo{
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .section8__titulo2{
+            font-size: 2.5rem;
+        }
+        .section8__form-container{
+            display: flex;
+            justify-content: center;
+            .section8__ico{
+                margin-bottom: 1rem;
+            }
+        }
+        .section8__container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 3rem;
+            margin-bottom: 1rem;
+            .section8__subtitulo{
+                width: 100%;
+            }
+
+        }
+        .section8__boton{
+            width: 85%;
+        }   
+    }
+}
+    

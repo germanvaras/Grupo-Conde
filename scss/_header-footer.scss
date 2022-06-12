@@ -1,0 +1,23 @@
+.header{
+    position:absolute;
+    top:0;
+    width: 100%;
+}
+.header,.footer{
+    background-color: #ffffff7c;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    
+        .header__img_logo, .footer__img_logo{
+        max-width: 4.5rem;
+        margin-left: 5rem;  
+        }
+        .header_img_marca, .footer_img_marca{
+         margin-left: 5rem;
+         max-width: 40rem;
+                
+        }
+        
+}
