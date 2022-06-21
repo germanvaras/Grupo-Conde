@@ -3,15 +3,21 @@
   padding: 0;
   box-sizing: border-box;
   font-size: 62.5%;
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Montserrat', sans-serif; }
+
+:root {
+  --colorFondo: #e1e1e1;
+  --colorPrincipal: #018093;
+  --colorTipo: #000000;
+  --colorBlanco: #f5f5f5; }
 
 h1 {
   font-size: 5rem; }
 
 h2 {
-  font-size: 4rem;
-  letter-spacing: .5rem;
-  font-weight: 900; }
+  font-size: 3rem;
+  letter-spacing: .3rem;
+  font-weight: 700; }
 
 h3 {
   font-size: 3rem;
@@ -19,9 +25,12 @@ h3 {
 
 p,
 button,
-input {
+input, select {
   font-size: 2rem;
   font-weight: 400; }
+
+.sombra {
+  box-shadow: 0px 5px 15px 0px rgba(100, 100, 100, 0.51); }
 
 .header {
   position: absolute;
@@ -45,31 +54,46 @@ input {
   width: 100%; }
 
 .section2 {
-  background-color: #000000;
-  color: #ffffff; }
-  .section2 .section2__img {
-    max-width: 100%;
-    padding: 10rem 0; }
+  background-color: var(--colorFondo);
+  color: var(--colorTipo); }
+  .section2 .section2__imgContainer {
+    padding: 10rem; }
+    .section2 .section2__imgContainer .section2__img {
+      max-width: 100%;
+      border-radius: .6rem; }
   .section2 .section2__container {
     padding: 2rem 5rem; }
     .section2 .section2__container .section2__titulo {
-      font-size: 6rem; }
+      font-size: 4rem; }
     .section2 .section2__container .section2__p {
       font-size: 2.5rem; }
     .section2 .section2__container .section2__boton {
-      background-color: #9B9B9B;
+      background-color: var(--colorPrincipal);
       color: #ffffff;
       border: none;
-      padding: 1rem 2rem; }
+      padding: 1rem 2rem;
+      transition: box-shadow .3s;
+      border-radius: .6rem; }
+      .section2 .section2__container .section2__boton:hover {
+        box-shadow: 0px 5px 15px 0px rgba(109, 109, 109, 0.51); }
 
 .section3 {
-  background-image: url(../img/fondo.webp);
+  background-color: var(--colorTipo);
   background-size: 100%;
-  color: #ffffff;
-  padding: 10rem 0; }
+  color: var(--colorFondo);
+  padding: 5rem;
+  display: flex;
+  justify-content: space-evenly; }
   .section3 h2 {
     font-size: 13rem;
     margin-bottom: 3rem; }
+  .section3 .section3__casas, .section3 .section3__barrios, .section3 .section3__departamentos, .section3 .section3__loteos {
+    border: solid 2px var(--colorPrincipal);
+    border-radius: .6rem;
+    padding: 2rem;
+    transition: box-shadow .3s; }
+    .section3 .section3__casas:hover, .section3 .section3__barrios:hover, .section3 .section3__departamentos:hover, .section3 .section3__loteos:hover {
+      box-shadow: 0px 5px 20px 0px var(--colorPrincipal); }
   .section3 .section3__numeros {
     font-size: 5rem; }
   .section3 .section3__titulos {
@@ -80,6 +104,36 @@ input {
   .section3 .section__p {
     margin-top: 2rem;
     font-size: 2.2rem; }
+
+.sectionPropiedades {
+  padding: 3rem;
+  background-color: var(--colorFondo); }
+  .sectionPropiedades .sectionPropiedades__container {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid var(--colorPrincipal);
+    border-radius: .6rem;
+    margin: .3rem;
+    padding: 1rem; }
+    .sectionPropiedades .sectionPropiedades__container .sectionPropiedades__titulo {
+      font-size: 2.5rem; }
+    .sectionPropiedades .sectionPropiedades__container .sectionPropiedades__img {
+      width: 100%; }
+    .sectionPropiedades .sectionPropiedades__container .sectionPropiedades__p {
+      padding: 1rem;
+      text-align: center; }
+    .sectionPropiedades .sectionPropiedades__container .sectionPropiedades__button {
+      width: 50%;
+      background-color: var(--colorPrincipal);
+      color: var(--colorBlanco);
+      border: none;
+      padding: 1rem 2rem;
+      margin-bottom: 2rem;
+      transition: box-shadow .3s;
+      border-radius: .6rem; }
+      .sectionPropiedades .sectionPropiedades__container .sectionPropiedades__button:hover {
+        box-shadow: 0px 5px 15px 0px rgba(109, 109, 109, 0.51); }
 
 .section4 {
   background-color: #000000;
@@ -134,7 +188,7 @@ input {
     margin: 1rem 0;
     line-height: 2.2; }
   .section7 .section7__boton {
-    background-color: #7e7e7e;
+    background-color: #9B9B9B;
     color: #ffffff;
     border: none;
     padding: 1rem 2rem;
@@ -143,23 +197,25 @@ input {
 .section8 {
   background-color: #000000;
   color: #ffffff;
-  padding: 5rem; }
-  .section8 .section8__subtitulo {
-    background-color: #fffcfcb4;
-    font-size: 5rem;
-    text-align: right;
-    color: #008394;
-    padding: 1rem; }
-  .section8 .section8__form-container {
-    margin: 1rem 0; }
-    .section8 .section8__form-container .section8__ico {
-      width: 8rem;
-      margin-right: 1rem; }
-    .section8 .section8__form-container .section8__input {
-      outline: none;
-      border: 4px solid #008394;
+  padding: 3rem; }
+  .section8 .section8__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section8 .section8__form .section8__subtitulo {
+      background-color: #fffcfcb4;
+      font-size: 5rem;
+      color: #008394;
+      padding: 1rem; }
+    .section8 .section8__form .section8__form-container {
       margin: 1rem 0; }
-      .section8 .section8__form-container .section8__input:focus {
+      .section8 .section8__form .section8__form-container .section8__ico {
+        width: 6rem;
+        margin: 0 auto; }
+      .section8 .section8__form .section8__form-container .section8__input {
+        outline: none;
+        border: 4px solid #008394;
+        margin: 1rem 0;
         padding-left: 1rem; }
   .section8 .section8__boton {
     background-color: #9B9B9B;
@@ -169,52 +225,19 @@ input {
     padding: 1rem 2rem;
     margin: 3rem 0 2rem 0;
     width: 33%; }
-  .section8 .section8__label {
-    margin: 1rem 0; }
-    .section8 .section8__label .css-checkbox {
-      display: none; }
-      .section8 .section8__label .css-checkbox:checked + i {
-        background: #008394;
-        border-color: #008394; }
-        .section8 .section8__label .css-checkbox:checked + i:hover:after {
-          opacity: 1; }
-        .section8 .section8__label .css-checkbox:checked + i:after {
-          opacity: 1;
-          border-color: #FFF; }
-      .section8 .section8__label .css-checkbox + i {
-        box-sizing: border-box; }
-        .section8 .section8__label .css-checkbox + i:before, .section8 .section8__label .css-checkbox + i:after {
-          box-sizing: border-box; }
-      .section8 .section8__label .css-checkbox + i {
-        position: relative;
-        display: inline-block;
-        top: -1px;
-        width: 25px;
-        height: 25px;
-        margin: 0;
-        vertical-align: middle;
-        border: 1px solid #999;
-        transition: background 200ms ease;
-        border-radius: .2em;
-        background: #F9F9F9;
-        font-size: 25px;
-        cursor: pointer; }
-        .section8 .section8__label .css-checkbox + i:hover:after {
-          opacity: .2; }
-        .section8 .section8__label .css-checkbox + i:after {
-          content: '';
-          opacity: 0;
-          transform: translateZ(1px) rotate(-45deg);
-          outline: 1px solid transparent;
-          position: absolute;
-          top: 22%;
-          left: 15%;
-          width: .68em;
-          height: .4em;
-          border: .15em solid #222;
-          border-top: none;
-          border-right: none;
-          background: rgba(0, 0, 0, 0); }
+  .section8 .section8__select {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .section8 .section8__select .select__select {
+      text-align: center;
+      padding: 1rem;
+      margin: 1rem 0;
+      border: 4px solid #008394;
+      outline: none;
+      box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.51); }
+      .section8 .section8__select .select__select option {
+        font-size: 2rem; }
 
 @media (max-width: 480px) {
   .section2 .section2__img {
