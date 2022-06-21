@@ -1,10 +1,12 @@
 @import 'mixincheck';
 @import 'globales';
+@import 'header';
 
-.section1__img--edificio {
-    width: 100%;
+.section1{
+    .section1__img{
+        width: 32rem;
+    }
 }
-
 .section2 {
     background-color: #000000;
     color: #ffffff;
