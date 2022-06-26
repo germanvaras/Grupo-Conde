@@ -3,21 +3,73 @@
     top:0;
     width: 100%;
 }
-.header,.footer{
+.footer{
     background-color: #ffffff7c;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     padding: 2rem;
-    
-        .header__img_logo, .footer__img_logo{
+        .footer__img_logo{
         max-width: 4.5rem;
         margin-left: 5rem;  
         }
-        .header_img_marca, .footer_img_marca{
+        .footer_img_marca{
          margin-left: 5rem;
          max-width: 40rem;
                 
         }
         
+}
+.header__imagenConde{
+    width: 4rem;
+    border: none;
+    border-radius: 0.6rem;
+}
+.lista {
+    list-style: none;
+}
+.sps--abv{
+    background-color: transparent;
+    color:#000
+}
+.sps--blw{
+    background-color: #000;
+}
+.header__img--edificio {
+    width: 100%;
+    overflow: hidden;
+    filter: brightness(50%);
+}
+a {
+    text-decoration: none;
+    color: white; 
+}
+.header-navegacion {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    font-weight: bold;
+}
+.nav-link{
+    font-size: 1.8rem;
+    &:hover {
+        background-color:#85929e65;
+        border-radius: 4px;
+    }
+}
+.banner {
+    position: absolute;
+    top: 50%;
+    
+}
+@media (max-width: 860px) {
+    .banner {
+      height: 60px;
+      top: 8rem;
+     }
+    .sps--abv{
+        background-color: black;
+        color:#000 }
+
+     
 }
