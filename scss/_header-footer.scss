@@ -1,7 +1,10 @@
 .header{
-    position:absolute;
-    top:0;
     width: 100%;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    font-weight: bold;
 }
 .footer{
     background-color: #ffffff7c;
@@ -56,20 +59,4 @@ a {
         background-color:#85929e65;
         border-radius: 4px;
     }
-}
-.banner {
-    position: absolute;
-    top: 50%;
-    
-}
-@media (max-width: 860px) {
-    .banner {
-      height: 60px;
-      top: 8rem;
-     }
-    .sps--abv{
-        background-color: black;
-        color:#000 }
-
-     
 }

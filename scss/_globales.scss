@@ -1,10 +1,12 @@
-* {
+* { 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
     font-family: 'Montserrat', sans-serif;
+    
 } 
+
 :root{
     --colorFondo: #e1e1e1;
     --colorPrincipal: #018093;
@@ -13,7 +15,10 @@
 
     
 }  
-
+.row{   
+    margin: 0;
+    padding: 0;
+}
 h1 {
     font-size: 5rem;
 
