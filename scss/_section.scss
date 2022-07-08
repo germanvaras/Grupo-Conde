@@ -55,10 +55,7 @@
 
     }
 
-    .section3__casas,
-    .section3__barrios,
-    .section3__departamentos,
-    .section3__loteos {
+    .section3__container {
         border: solid 2px var(--colorPrincipal);
         border-radius: .6rem;
         padding: 2rem;
@@ -357,7 +354,8 @@
 
 .section8 {
     background-size: cover;
-    background-position-x: right;
+    width: 100%;
+    // background-position-x: right;
     background-image: url(/img/contactanos.webp);
     background-repeat: no-repeat;
     // filter: brightness(40%);
@@ -372,15 +370,18 @@
         .section8__titulo {
             font-size: 5rem;
             color:#3e3e3e;
+            margin-bottom: 2rem;
         }
       
         .form__container {
-            width: 50%;
+            width: 40%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color:  #067b8dc0;
+            background: rgba(1, 127, 147, 0.623);
+            box-shadow: 0 8px 32px 0 rgba(109, 109, 109, 0.51);
+            backdrop-filter: blur( 4px );
             padding: 3rem;
             border-radius: .6rem;
     

@@ -126,18 +126,12 @@ a {
   .section3 h2 {
     font-size: 13rem;
     margin-bottom: 3rem; }
-  .section3 .section3__casas,
-  .section3 .section3__barrios,
-  .section3 .section3__departamentos,
-  .section3 .section3__loteos {
+  .section3 .section3__container {
     border: solid 2px var(--colorPrincipal);
     border-radius: .6rem;
     padding: 2rem;
     transition: box-shadow .3s; }
-    .section3 .section3__casas:hover,
-    .section3 .section3__barrios:hover,
-    .section3 .section3__departamentos:hover,
-    .section3 .section3__loteos:hover {
+    .section3 .section3__container:hover {
       box-shadow: 0px 5px 20px 0px var(--colorPrincipal); }
   .section3 .section3__numeros {
     font-size: 5rem; }
@@ -315,7 +309,7 @@ a {
 
 .section8 {
   background-size: cover;
-  background-position-x: right;
+  width: 100%;
   background-image: url(/img/contactanos.webp);
   background-repeat: no-repeat;
   color: #ffffff;
@@ -326,14 +320,17 @@ a {
     align-items: center; }
     .section8 .section8__form .section8__titulo {
       font-size: 5rem;
-      color: #3e3e3e; }
+      color: #3e3e3e;
+      margin-bottom: 2rem; }
     .section8 .section8__form .form__container {
-      width: 50%;
+      width: 40%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: #067b8dc0;
+      background: rgba(1, 127, 147, 0.623);
+      box-shadow: 0 8px 32px 0 rgba(109, 109, 109, 0.51);
+      backdrop-filter: blur(4px);
       padding: 3rem;
       border-radius: .6rem; }
       .section8 .section8__form .form__container .section8__input {
@@ -476,12 +473,6 @@ a {
     bottom: 0; }
     .bannerContainer .banner__img {
       width: 15rem; }
-  .section2 .section2__container .section2__titulo {
-    font-size: 5rem; }
-  .section2 .section2__container .section2__p {
-    font-size: 2rem; }
-  .section2 .section2__imgContainer {
-    padding: 2rem; }
   .section6 .section6__img {
     padding: 1rem;
     border-radius: 1.6rem; }
@@ -491,8 +482,14 @@ a {
     font-size: 3.2rem; } }
 
 @media (max-width: 767px) {
+  .bannerContainer .banner__img {
+    width: 25rem; }
   .section2 .section2__imgContainer {
-    padding: 2rem; }
+    padding: 2rem;
+    display: flex;
+    justify-content: center; }
+    .section2 .section2__imgContainer .section2__img {
+      max-width: 40rem; }
   .section2 .section2__container {
     text-align: center;
     padding: 1rem; }
@@ -510,45 +507,34 @@ a {
     padding: 3rem; }
     .section3 h2 {
       font-size: 5rem; }
-    .section3 .section3__casas,
-    .section3 .section3__barrios,
-    .section3 .section3__departamentos,
-    .section3 .section3__loteos {
+    .section3 .section3__container {
+      display: flex;
       background-color: #ffffff1a;
       border: solid 2px #00798e;
-      padding: 1rem;
+      padding: 1.5rem;
       margin-bottom: 2rem;
       box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.609); }
-      .section3 .section3__casas .section3__numeros,
-      .section3 .section3__barrios .section3__numeros,
-      .section3 .section3__departamentos .section3__numeros,
-      .section3 .section3__loteos .section3__numeros {
+      .section3 .section3__container .section3__flex {
+        display: flex;
+        flex-basis: 50%;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        justify-content: space-around; }
+        .section3 .section3__container .section3__flex .section3__numeros {
+          font-size: 2.8rem; }
+        .section3 .section3__container .section3__flex .section3__titulos {
+          font-size: 1.8rem; }
+        .section3 .section3__container .section3__flex .section__p {
+          font-size: 1.2rem;
+          display: none; }
+      .section3 .section3__container .section3__img {
+        width: 7.5rem; }
+      .section3 .section3__container .section3__img,
+      .section3 .section3__container .section3__p {
+        margin-top: 0.5rem; }
+      .section3 .section3__container .section3__numeros {
         font-size: 3.5rem; }
-      .section3 .section3__casas .section3__img,
-      .section3 .section3__casas .section3__p,
-      .section3 .section3__barrios .section3__img,
-      .section3 .section3__barrios .section3__p,
-      .section3 .section3__departamentos .section3__img,
-      .section3 .section3__departamentos .section3__p,
-      .section3 .section3__loteos .section3__img,
-      .section3 .section3__loteos .section3__p {
-        margin-top: 1rem; }
-    .section3 .section3__barrios .section3__numeros {
-      font-size: 3.5rem; }
-    .section3 .section3__barrios .section3__img,
-    .section3 .section3__barrios .section3__p {
-      margin-top: 1rem; }
-    .section3 .section3__loteos .section3__numeros {
-      font-size: 3.5rem; }
-    .section3 .section3__loteos .section3__img,
-    .section3 .section3__loteos .section3__p {
-      margin-top: 1rem;
-      letter-spacing: 0.2px; }
-    .section3 .section3__departamentos .section3__numeros {
-      font-size: 3.5rem; }
-    .section3 .section3__departamentos .section3__img,
-    .section3 .section3__departamentos .section3__p {
-      margin-top: 1rem; }
   .sectionPropiedades .sectionPropiedades__titulo {
     font-size: 4rem; }
   .sectionPropiedades .button__final {
@@ -585,15 +571,17 @@ a {
       .section5 .section5__container .section5__subtitulo.card-text {
         border-radius: 6px; }
   .section6 .section6__img {
-    padding: 2rem;
-    border-radius: 2.6rem; }
+    max-width: 40rem;
+    border-radius: 1.6rem;
+    margin: 0 auto; }
   .section6 .section6__titulo {
     font-size: 3rem;
-    text-align: center; }
+    text-align: center;
+    margin: 0; }
   .section6 .section6__container {
     justify-content: center;
     align-items: center;
-    padding: 1.5rem;
+    padding: 1rem;
     margin: 0; }
     .section6 .section6__container .section6__p {
       text-align: center;
