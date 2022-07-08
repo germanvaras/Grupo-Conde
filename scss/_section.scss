@@ -226,9 +226,10 @@
         margin: 4rem 2rem 4rem 0;
         background-color: #fffcfc98;
         transition: box-shadow .6s;
-
+        cursor: pointer;
         &:hover {
             box-shadow: 0px 5px 15px 0px rgba(109, 109, 109, 0.51);
+            
         }
 
         .section5__subtitulo {
@@ -355,7 +356,13 @@
 }
 
 .section8 {
-    background-color: #000000;
+    background-size: cover;
+    background-position-x: right;
+    background-image: url(/img/contactanos.webp);
+    background-repeat: no-repeat;
+    // filter: brightness(40%);
+    
+    // background-color: #000000;
     color: #ffffff;
     padding: 3rem;
     .section8__form{
@@ -364,7 +371,7 @@
         align-items: center;
         .section8__titulo {
             font-size: 5rem;
-            color: var(--colorBlanco);
+            color:#3e3e3e;
         }
       
         .form__container {
@@ -373,7 +380,7 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: var(--colorPrincipal);
+            background-color:  #067b8dc0;
             padding: 3rem;
             border-radius: .6rem;
     

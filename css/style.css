@@ -7,7 +7,7 @@
 
 :root {
   --colorFondo: #e1e1e1;
-  --colorPrincipal: #018093;
+  --colorPrincipal: #017f93;
   --colorTipo: #000000;
   --colorBlanco: #f5f5f5; }
 
@@ -234,7 +234,8 @@ a {
     width: 40rem;
     margin: 4rem 2rem 4rem 0;
     background-color: #fffcfc98;
-    transition: box-shadow .6s; }
+    transition: box-shadow .6s;
+    cursor: pointer; }
     .section5 .section5__container:hover {
       box-shadow: 0px 5px 15px 0px rgba(109, 109, 109, 0.51); }
     .section5 .section5__container .section5__subtitulo {
@@ -313,7 +314,10 @@ a {
       margin: 1rem 0; }
 
 .section8 {
-  background-color: #000000;
+  background-size: cover;
+  background-position-x: right;
+  background-image: url(/img/contactanos.webp);
+  background-repeat: no-repeat;
   color: #ffffff;
   padding: 3rem; }
   .section8 .section8__form {
@@ -322,14 +326,14 @@ a {
     align-items: center; }
     .section8 .section8__form .section8__titulo {
       font-size: 5rem;
-      color: var(--colorBlanco); }
+      color: #3e3e3e; }
     .section8 .section8__form .form__container {
       width: 50%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      background-color: var(--colorPrincipal);
+      background-color: #067b8dc0;
       padding: 3rem;
       border-radius: .6rem; }
       .section8 .section8__form .form__container .section8__input {
