@@ -310,7 +310,7 @@ a {
 .section8 {
   background-size: cover;
   width: 100%;
-  background-image: url(/img/contactanos.webp);
+  background-image: url(../img/contactanos.webp);
   background-repeat: no-repeat;
   color: #ffffff;
   padding: 3rem; }
