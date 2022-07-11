@@ -11,8 +11,9 @@
 }
 
 .header__imagenConde{
-    width: 14rem;
+    width: 4rem;
     border: none;
+    border-radius: .6rem;
 }
 .lista {
     list-style: none;
@@ -33,20 +34,21 @@
 .nav-link{
     font-size: 1.8rem;
     transition: all .4s;
-    margin-right: 17rem;
+    margin-right: 5rem;
     &:hover {
         background-color:#85929e65;
         border-radius: 4px;
     }
 }
-.navbar-toggler-icon{
-    background-image: url(../img/conde-perfil-redes.webp);
+span.navbar-toggler-icon{
+   background-image: url(../img/hamburguer.png);
    border-radius: 0.6rem;
-   width: 4rem;
-   height: 4rem;
+   width: 2.5rem;
+   height: 2.5rem;
 }
 .navbar-toggler{
     border:none;
+    color: var(--colorPrincipal)
 }
 .header__img--edificio {
     width: 100%;
