@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/conde-perfil-redes.webp">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -17,9 +18,9 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top sps sps--abv">
-          <div class="container-fluid">
+          <div class="container-fluid header__container">
             <a class="navbar-brand fw-bolder" href="index.html">
-                <img class="header__imagenConde" src="img/conde-perfil-redes.webp" alt="Logotipo Conde">
+                <img class="header__imagenConde" src="img/conde-azul.webp" alt="Logotipo Conde">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -148,8 +149,7 @@
                 <button class="sectionPropiedades__button">Ver Propiedad</button>
 
             </div>
-             <button class="button__final">Ver Todas</button>   
-
+             <a href="./propiedades.html" class="text-center" ><button class="button__final">Ver Todas</button></a>
         </section>
         <!-- section 4  -->
 
@@ -209,15 +209,15 @@
                 <h2 class="section6__titulo">Trabaja con nosotros</h2>
                 <div class="row section6__container">
                     <img class="section6__imgp col-md-6 col-12" src="img/wp-b.webp" alt="">
-                    <p class="section6__p col-md-6 col-12">261 4 999 732 / 261 3 409 444</p>
+                    <a target="_blank"  href="https://wa.me/+5492614999732" class="section6__p col-md-6 col-12"><p class="section6__texto" >261 4 999 732</p></a>
                 </div>
                 <div class="row section6__container">
                     <img class="section6__imgp col-md-6 col-12" src="img/Wallpaper01 (16).webp" alt="">
-                    <p class="section6__p col-md-6 col-12 ">Av. Panamá N°7634 / Chacras de Coria - Mendoza</p>
+                    <a href="https://goo.gl/maps/6T7hAHYg6fsqe87V9" class="section6__p col-md-6 col-12" target="_blank"><p class="section6__texto">Av. Panamá N°7634 / Chacras de Coria - Mendoza</p></a>
                 </div>
                 <div class="row section6__container">
                     <img class="section6__imgp col-md-6 col-12" src="img/mail-b.webp" alt="">
-                    <p class="section6__p col-md-6 col-12">info@grupoconde.com.ar</p>
+                    <a target="_blank"  href="mailto:info@grupoconde.com.ar" class="section6__p col-md-6 col-12"><p class="section6__texto">info@grupoconde.com.ar</p></a>
                 </div>
             </div>
 
@@ -251,18 +251,21 @@
             </div>
         </section>
         <section id="SectionContacto" class="section8 mb-2 container-fluid ">
-            <form action="" class="section8__form">
+            <form action="https://formsubmit.co/ger.varas.97@gmail.com" class="section8__form" method="POST">
 
                 <h2 class="section8__titulo">Contacto</h2>
                 <div class="form__container">
-                    <input class="col-12 section8__input" type="text" placeholder="Nombre">
-                    <input class="col-12 section8__input" type="number" placeholder="Teléfono">
-                    <input class="col-12 section8__input" type="email" placeholder="Mail">
-                    <select name="" id="" class="select__select">
+                    <input type="hidden" name="_subject" value="Nuevo Contacto!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/email.html">
+                    <input class="col-12 section8__input" type="text" placeholder="Nombre" name="nombre" required>
+                    <input class="col-12 section8__input" type="number" placeholder="Teléfono" name="numero" required>
+                    <input class="col-12 section8__input" type="email" placeholder="Mail" name="email" required>
+                    <select name="opcion" id="" class="select__select" required>
                         <option value="" disabled selected>Sector de Interés</option>
-                        <option value="">Arquitectura</option>
-                        <option value="">Ingenieria</option>
-                        <option value="">Inversion</option>
+                        <option value="Arquitectura">Arquitectura</option>
+                        <option value="Ingenieria">Ingenieria</option>
+                        <option value="Inversion">Inversión</option>
                     </select>
                     <input class="section8__boton text-center" type="submit">
                 </div>
@@ -277,22 +280,22 @@
     <footer class="footer row container-fluid">
 
         <section class="col-lg-6 col-12 text-center footer__sectionRedes">
-            <a target="_blank"  href="https://wa.me/+5492615749275">
+            <a target="_blank"  href="https://wa.me/+5492614999732">
                 <img class="footer__img_logo" src="./img/WATHS.webp" alt="Imagen whatsapp">
             </a>
-            <a target="_blank"  href="https://www.gmail.com">
+            <a target="_blank"  href="mailto:info@grupoconde.com.ar"> 
                 <img class="footer__img_logo" src="./img/MAIL.webp" alt="Imagen Mail">
             </a>
-            <a target="_blank"  href="https://www.instagram.com">
+            <a target="_blank"  href="https://instagram.com/grupo.conde?igshid=YmMyMTA2M2Y=">
                 <img class="footer__img_logo" src="./img/INST.webp" alt="Imagen instagram">
             </a>
-            <a target="_blank"  href="https:/www.linkedin.com">
+            <a target="_blank"  href="https://www.linkedin.com/company/grupo-conde/">
                 <img class="footer__img_logo" src="./img/LIN.webp" alt="Imagen linkedin">
             </a>
         </section>
         <section class="col-lg-6 col-12 footer__logo">
             <a href="/index.html">
-                <img class="footer_img_marca" src="img/conde-logotipo-positivo-color-bonificada.webp" alt="">
+                <img class="footer_img_marca" src="img/conde-azul.webp" alt="">
             </a>
         </section>
 

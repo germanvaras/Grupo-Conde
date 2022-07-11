@@ -2,97 +2,196 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Conde</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Propiedades</title>
 </head>
+
 <body>
 
-    <header class=""">
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top sps sps--abv">
-          <div class="container-fluid">
-            <a class="navbar-brand fw-bolder" href="index.html">
-                <img class="header__imagenConde" src="img/conde-perfil-redes.webp" alt="Logotipo Conde">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav header-navegacion">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="">
-                    <img class="header__imagen" src="img/Conde-logotipo.webp" alt="Imagen Conde">
-                  </a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link active" href="#SectionPropiedades">Propiedades</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#SectionServicios">Servicios</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#SectionProyectos">Proyectos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="#SectionContacto">Contacto</a>
-                </li> -->
-              </ul>
-            </div>  
-          </div>
-        </nav>
-    </header>
-    <main>
-        <img class="header__img--edificio" src="img/Imagen-banner.webp" alt="Fondo de página">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top sps sps--abv">
+      <div class="container-fluid header__container">
+        <a class="navbar-brand fw-bolder" href="index.html">
+            <img class="header__imagenConde" src="img/conde-azul.webp" alt="Logotipo Conde">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav header-navegacion text-center">
+            <li class="nav-item ">
+              <a class="nav-link active" aria-current="page" href="#SectionPerfil">Volver al Inicio </a>
+            </li>
+        </div>  
+      </div>
+    </nav>
+</header>   
+  <main class="propiedades__main">
+    <img class="banner header__img--edificio" src="img/Imagen-banner.webp" alt="Fondo de página">
+    <!-- section 1 -->
+    <section class="bannerContainer text-center container-fluid section1">
+      <h1 class="section1__titulo">Propiedades</h1>
+    </section>
+    <!-- section 2 -->
+    <section class="sectionPropiedades row mb-2 ">
+      <div class="sectionPropiedades__container col-xl-3 col-sm-5  col-12 ">
+        <h3 class="sectionPropiedades__titulo">O'Higgins</h3>
+        <div class="contenedor__imagenes">
+          <img class="sectionPropiedades__prop" src="img/casa1.webp" alt="">
+        </div>
+        <p class="sectionPropiedades__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis
+          nobis mollitia sint!!</p>
+        <button class="sectionPropiedades__button">Ver Propiedad</button>
+      </div>
 
-        <section class="text-center container-fluid banner section1 mb-2">
-            <img class="section1__img" src="img/Conde-logotipo.webp" alt="Logo Conde">
-        </section>
-        <section>
+      <div class="sectionPropiedades__container col-xl-3 col-sm-5 col-12 ">
+        <h3 class="sectionPropiedades__titulo">Olivos de Furlotti</h3>
+        <div class="contenedor__imagenes">
+          <img class="sectionPropiedades__prop" src="img/furlotti.webp" alt="">
+        </div>
+        <p class="sectionPropiedades__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis
+          nobis mollitia sint!!</p>
+        <button class="sectionPropiedades__button">Ver Propiedad</button>
+      </div>
 
-        </section>
+      <div class="sectionPropiedades__container col-xl-3 col-sm-5 col-12">
+        <h3 class="sectionPropiedades__titulo"> Huerto </h3>
+        <div class="contenedor__imagenes">
+          <img class="sectionPropiedades__prop" src="img/huerto.webp" alt="">
 
-        <section class="Section__propiedades">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate veritatis quisquam distinctio, labore corrupti nobis, mollitia quia quo nam quod qui nostrum itaque? Adipisci, ex repudiandae reprehenderit odit, numquam placeat quod, magni fugit unde laudantium nesciunt fuga laborum sunt esse odio ducimus. Distinctio est consequatur natus unde eos minima quia soluta rem porro culpa! Non doloribus pariatur repellat incidunt sequi hic cupiditate voluptate architecto nisi similique laboriosam, facilis, tenetur, expedita perferendis minus. Ratione minus explicabo ut? Omnis autem fuga alias dignissimos molestias magnam odio neque saepe ratione nulla veniam nihil, incidunt nisi eligendi ut consequatur reiciendis dolores cumque quas aperiam.</p>
+        </div>
+        <p class="sectionPropiedades__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis
+          nobis mollitia sint!!</p>
+        <button class="sectionPropiedades__button">Ver Propiedad</button>
+      </div>
 
-        </section>
-    </main>
-    <!-- Footer  -->
+      <div class="sectionPropiedades__container col-xl-3 col-sm-5  col-12 ">
+        <h3 class="sectionPropiedades__titulo"> Finca 3HA Malargüe</h3>
+        <div class="contenedor__imagenes">
+          <img class="sectionPropiedades__prop" src="img/finca1.webp" alt="">
 
-    <footer class="footer row d-flex justify-content-around">
+        </div>
+        <p class="sectionPropiedades__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis
+          nobis mollitia sint!!</p>
+        <button class="sectionPropiedades__button">Ver Propiedad</button>
+      </div>
 
-        <section class="col-6 text-center justify-content-between">
-            <a target="_blank"  href="https://wa.me/+5492615749275">
-                <img class="footer__img_logo" src="img/WATHS.webp" alt="Imagen whatsapp">
-            </a>
-            <a target="_blank"  href="https://www.gmail.com">
-                <img class="footer__img_logo" src="img/MAIL.webp" alt="Imagen Mail">
-            </a>
-            <a target="_blank"  href="https://www.instagram.com">
-                <img class="footer__img_logo" src="img/INST.webp" alt="Imagen instagram">
-            </a>
-            <a target="_blank"  href="https:/www.linkedin.com">
-                <img class="footer__img_logo" src="img/LIN.webp" alt="Imagen linkedin">
-            </a>
-        </section>
-        <section class="col-6">
-            <a href="/index.html">
-                <img class="footer_img_marca" src="./img/conde-logotipo-positivo-color-bonificada.webp" alt="">
-            </a>
-        </section>
+      <div class="sectionPropiedades__container col-xl-3 col-sm-5 col-12 ">
+        <h3 class="sectionPropiedades__titulo">Finca 6HA Malargüe</h3>
+        <div class="contenedor__imagenes">
+          <img class="sectionPropiedades__prop" src="img/finca2.webp" alt="">
 
-    </footer>
+        </div>
+        <p class="sectionPropiedades__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis
+          nobis mollitia sint!!</p>
+        <button class="sectionPropiedades__button">Ver Propiedad</button>
+      </div>
 
-    <script src="js/nav.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>   
+      <div class="sectionPropiedades__container col-xl-3 col-sm-5 col-12">
+        <h3 class="sectionPropiedades__titulo"> Depto Calle Drago</h3>
+        <div class="contenedor__imagenes">
+          <img class="sectionPropiedades__prop" src="img/depto1.webp" alt="">
+
+        </div>
+        <p class="sectionPropiedades__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis
+          nobis mollitia sint!!</p>
+        <button class="sectionPropiedades__button">Ver Propiedad</button>
+
+      </div>
+
+      <div class="sectionPropiedades__container col-xl-3 col-sm-5  col-12 ">
+        <h3 class="sectionPropiedades__titulo"> Fideicomiso Vertiz</h3>
+        <div class="contenedor__imagenes">
+
+          <img class="sectionPropiedades__prop" src="img/fideicomiso.webp" alt="">
+        </div>
+        <p class="sectionPropiedades__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis
+          nobis mollitia sint!!</p>
+        <button class="sectionPropiedades__button">Ver Propiedad</button>
+      </div>
+
+      <div class="sectionPropiedades__container col-xl-3 col-sm-5 col-12 ">
+        <h3 class="sectionPropiedades__titulo">QVATRRO Viamonte</h3>
+        <div class="contenedor__imagenes">
+          <img class="sectionPropiedades__prop" src="img/viamonte.webp" alt="">
+
+        </div>
+        <p class="sectionPropiedades__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis
+          nobis mollitia sint!!</p>
+        <button class="sectionPropiedades__button">Ver Propiedad</button>
+      </div>
+
+      <div class="sectionPropiedades__container col-xl-3 col-sm-5 col-12">
+        <h3 class="sectionPropiedades__titulo"> Casa Barrio Parque</h3>
+        <div class="contenedor__imagenes">
+          <img class="sectionPropiedades__prop" src="img/casa2.webp" alt="">
+
+        </div>
+        <p class="sectionPropiedades__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis
+          nobis mollitia sint!!</p>
+        <button class="sectionPropiedades__button">Ver Propiedad</button>
+      </div>
+      <div class="sectionPropiedades__container col-xl-3 col-sm-5 col-12">
+        <h3 class="sectionPropiedades__titulo"> Depto Bandera de los andes</h3>
+        <div class="contenedor__imagenes">
+          <img class="sectionPropiedades__prop" src="img/depto2.webp" alt="">
+
+        </div>
+        <p class="sectionPropiedades__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis
+          nobis mollitia sint!!</p>
+        <button class="sectionPropiedades__button">Ver Propiedad</button>
+      </div>
+      <div class="sectionPropiedades__container col-xl-3 col-sm-5 col-12">
+        <h3 class="sectionPropiedades__titulo"> Depto Honorio Barraquero</h3>
+        <div class="contenedor__imagenes">
+          <img class="sectionPropiedades__prop" src="img/depto3.webp" alt="">
+
+        </div>
+        <p class="sectionPropiedades__p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi corporis
+          nobis mollitia sint!!</p>
+        <button class="sectionPropiedades__button">Ver Propiedad</button>
+      </div>
+
+    </section>
+  </main>
+  <!-- Footer  -->
+  <footer class="footer row container-fluid">
+
+    <section class="col-lg-6 col-12 text-center footer__sectionRedes">
+        <a target="_blank"  href="https://wa.me/+5492614999732">
+            <img class="footer__img_logo" src="./img/WATHS.webp" alt="Imagen whatsapp">
+        </a>
+        <a target="_blank"  href="mailto:info@grupoconde.com.ar"> 
+            <img class="footer__img_logo" src="./img/MAIL.webp" alt="Imagen Mail">
+        </a>
+        <a target="_blank"  href="https://instagram.com/grupo.conde?igshid=YmMyMTA2M2Y=">
+            <img class="footer__img_logo" src="./img/INST.webp" alt="Imagen instagram">
+        </a>
+        <a target="_blank"  href="https://www.linkedin.com/company/grupo-conde/">
+            <img class="footer__img_logo" src="./img/LIN.webp" alt="Imagen linkedin">
+        </a>
+    </section>
+    <section class="col-lg-6 col-12 footer__logo">
+        <a href="/index.html">
+            <img class="footer_img_marca" src="img/conde-azul.webp" alt="">
+        </a>
+    </section>
+
+</footer>
+
+  <script src="js/nav.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>

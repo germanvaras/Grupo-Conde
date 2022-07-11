@@ -117,7 +117,10 @@
 
 }
 
-@media(max-width: 950px) {
+@media(max-width: 990px) {
+    .nav-link{
+        margin: 0;
+    }
     .sps--abv {
         background-color: var(--colorTipo);
         color: var(--colorTipo)
@@ -162,6 +165,7 @@
 }
 
 @media (max-width: 767px) {
+    
     .bannerContainer{
         .banner__img{
             width: 40rem;

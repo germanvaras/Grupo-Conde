@@ -5,28 +5,14 @@
     justify-content: space-evenly;
     font-size: 2rem;
     font-weight: bold;
-}
-.footer{
-    background-color: #ffffff7c;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 2rem;
-        .footer__img_logo{
-        max-width: 4.5rem;
-        margin-left: 5rem;  
+        .header__container{
+            padding: 1rem;
         }
-        .footer_img_marca{
-         margin-left: 5rem;
-         max-width: 40rem;
-                
-        }
-        
 }
+
 .header__imagenConde{
-    width: 4rem;
+    width: 14rem;
     border: none;
-    border-radius: 0.6rem;
 }
 .lista {
     list-style: none;
@@ -38,15 +24,6 @@
 .sps--blw{
     background-color: #000;
 }
-.header__img--edificio {
-    width: 100%;
-    overflow: hidden;
-    filter: brightness(50%);
-}
-a {
-    text-decoration: none;
-    color: white; 
-}
 .header-navegacion {
     display: flex;
     flex-basis: 100%;
@@ -55,8 +32,45 @@ a {
 }
 .nav-link{
     font-size: 1.8rem;
+    transition: all .4s;
+    margin-right: 17rem;
     &:hover {
         background-color:#85929e65;
         border-radius: 4px;
     }
+}
+.navbar-toggler-icon{
+    background-image: url(../img/conde-perfil-redes.webp);
+   border-radius: 0.6rem;
+   width: 4rem;
+   height: 4rem;
+}
+.navbar-toggler{
+    border:none;
+}
+.header__img--edificio {
+    width: 100%;
+    overflow: hidden;
+    filter: brightness(50%);
+}
+.footer{
+    background-color: #ffffff7c;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+        .footer__img_logo{
+        max-width: 4.5rem;
+        margin-left: 5rem;
+        transition: transform .5s;
+            &:hover{
+                transform: scale(1.15);
+            }
+        }
+        .footer_img_marca{
+         margin-left: 5rem;
+         max-width: 40rem;
+                
+        }
+        
 }
