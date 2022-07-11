@@ -1,14 +1,19 @@
-.banner {
-
-    height: 100vh;
-    width: 100%;
-}
-.bannerContainer {
-    position: absolute;
-    top: 50%;
-
-    .baner__img {
+.section1{
+    .banner {
         width: 100%;
+        overflow: hidden;
+        filter: brightness(50%);
+        height: 100vh;
+        width: 100%;
+    }
+    
+    .bannerContainer {
+        position: absolute;
+        top: 50%;
+    
+        .baner__img {
+            width: 100%;
+        }
     }
 }
 .section2 {
@@ -280,8 +285,7 @@
             }
         }
         .section7__ico {
-            width: 6rem;
-            margin: 1rem
+            width: 7rem;
         }
         .section7__p {
             margin: 1rem 2rem;

@@ -1,31 +1,27 @@
-.header__imagen{
-    width: 17rem;
+main{
+    background-color: $colorFondo
 }
-.propiedades__main{
-    background-color: $colorFondo;
-    .section1{
-        position: absolute;
-        .section1__titulo{
-            color: $colorBlanco
-        }    
-    }
-    .sectionPropiedades{
+.section1__titulo{
+    color:$colorBlanco
+}
+.sectionPropiedades {
     width: 90%;
     margin: 2rem auto;
     padding: 4rem;
     border-radius: 1rem;
-    .sectionPropiedades__container{
+
+    .sectionPropiedades__container {
         width: 34rem;
         margin-top: 2rem;
-        .contenedor__imagenes{
-            .sectionPropiedades__prop{
+
+        .contenedor__imagenes {
+            .sectionPropiedades__prop {
                 object-fit: cover;
                 width: 100%;
                 height: 30rem;
                 border-radius: 0.3rem;
             }
-            
+
         }
-    }
     }
 }

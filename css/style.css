@@ -112,11 +112,6 @@ span.navbar-toggler-icon {
   border: none;
   color: #018093; }
 
-.header__img--edificio {
-  width: 100%;
-  overflow: hidden;
-  filter: brightness(50%); }
-
 .footer {
   background-color: #ffffff7c;
   width: 100%;
@@ -133,14 +128,17 @@ span.navbar-toggler-icon {
     margin-left: 5rem;
     max-width: 40rem; }
 
-.banner {
+.section1 .banner {
+  width: 100%;
+  overflow: hidden;
+  filter: brightness(50%);
   height: 100vh;
   width: 100%; }
 
-.bannerContainer {
+.section1 .bannerContainer {
   position: absolute;
   top: 50%; }
-  .bannerContainer .baner__img {
+  .section1 .bannerContainer .baner__img {
     width: 100%; }
 
 .section2 .section2__imgContainer {
@@ -304,8 +302,7 @@ span.navbar-toggler-icon {
     .section7 .section7__div .section7__container:last-child:hover {
       box-shadow: none; }
   .section7 .section7__div .section7__ico {
-    width: 6rem;
-    margin: 1rem; }
+    width: 7rem; }
   .section7 .section7__div .section7__p {
     margin: 1rem 2rem;
     line-height: 2.2;
@@ -392,28 +389,25 @@ span.navbar-toggler-icon {
       .emailBody .container .section7__boton:hover {
         background-color: #018093; }
 
-.header__imagen {
-  width: 17rem; }
-
-.propiedades__main {
+main {
   background-color: #e1e1e1; }
-  .propiedades__main .section1 {
-    position: absolute; }
-    .propiedades__main .section1 .section1__titulo {
-      color: #f5f5f5; }
-  .propiedades__main .sectionPropiedades {
-    width: 90%;
-    margin: 2rem auto;
-    padding: 4rem;
-    border-radius: 1rem; }
-    .propiedades__main .sectionPropiedades .sectionPropiedades__container {
-      width: 34rem;
-      margin-top: 2rem; }
-      .propiedades__main .sectionPropiedades .sectionPropiedades__container .contenedor__imagenes .sectionPropiedades__prop {
-        object-fit: cover;
-        width: 100%;
-        height: 30rem;
-        border-radius: 0.3rem; }
+
+.section1__titulo {
+  color: #f5f5f5; }
+
+.sectionPropiedades {
+  width: 90%;
+  margin: 2rem auto;
+  padding: 4rem;
+  border-radius: 1rem; }
+  .sectionPropiedades .sectionPropiedades__container {
+    width: 34rem;
+    margin-top: 2rem; }
+    .sectionPropiedades .sectionPropiedades__container .contenedor__imagenes .sectionPropiedades__prop {
+      object-fit: cover;
+      width: 100%;
+      height: 30rem;
+      border-radius: 0.3rem; }
 
 @media (max-width: 1560px) {
   .section2 .section2__container {
