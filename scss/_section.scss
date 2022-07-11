@@ -1,6 +1,18 @@
+.banner {
+
+    height: 100vh;
+    width: 100%;
+}
+.bannerContainer {
+    position: absolute;
+    top: 50%;
+
+    .baner__img {
+        width: 100%;
+    }
+}
 .section2 {
-    background-color: var(--colorFondo);
-    color: var(--colorTipo);
+    @extend %sectionGris;
 
     .section2__imgContainer {
         padding: 10rem;
@@ -8,39 +20,28 @@
         .section2__img {
             max-width: 100%;
             border-radius: .6rem;
-
         }
     }
-
     .section2__container {
         padding: 2rem 5rem;
 
         .section2__titulo {
             font-size: 7rem;
         }
-
         .section2__p {
             font-size: 2.5rem;
         }
-
         .section2__boton {
-            background-color: var(--colorPrincipal);
-            color: #ffffff;
-            border: none;
-            padding: 1rem 2rem;
-            transition: box-shadow .3s;
-            border-radius: .6rem;
+            @extend %boton;
 
             &:hover {
-                box-shadow: 7px 5px 14px -6px rgba(109, 109, 109, 0.51);
+                box-shadow: $sombraGris
             }
         }
     }
-
 }
 .section3 {
-    background-color: var(--colorTipo);
-    color: var(--colorFondo);
+    @extend %sectionNegra;
     padding: 5rem;
     display: flex;
     justify-content: space-evenly;
@@ -48,19 +49,13 @@
     h2 {
         font-size: 13rem;
         margin-bottom: 3rem;
-
     }
-
     .section3__container {
-        border: solid 2px var(--colorPrincipal);
-        border-radius: .6rem;
+        @extend %card;
         padding: 2rem;
-        transition: box-shadow .3s;
-
         &:hover {
-            box-shadow: 7px 5px 14px -6px var(--colorPrincipal)
+            box-shadow: $sombraNeon
         }
-
     }
     .section3__numeros {
         font-size: 5rem;
@@ -83,8 +78,8 @@
 }
 
 .sectionPropiedades {
+    @extend %sectionGris;
     padding: 3rem;
-    background-color: var(--colorFondo);
     display: flex;
     justify-content: space-evenly;
 
@@ -95,16 +90,12 @@
     }
 
     .sectionPropiedades__container {
-        border: 2px solid var(--colorPrincipal);
-        border-radius: .6rem;
+        @extend %card;
         padding: 1rem;
         margin: .5rem;
-        transition: box-shadow 0.6s;
-
         &:hover {
-            box-shadow: 7px 5px 14px -6px rgba(109, 109, 109, 0.51);
+            box-shadow: $sombraGris
         }
-
         .sectionPropiedades__titulo {
             font-size: 2.5rem;
         }
@@ -119,65 +110,49 @@
         }
 
         .sectionPropiedades__button {
+            @extend %boton;
             width: 100%;
-            background-color: var(--colorPrincipal);
-            color: var(--colorBlanco);
-            border: none;
-            padding: 1rem 2rem;
-            margin-bottom: 2rem;
-            transition: background-color .3s;
-            border-radius: .6rem;
 
             &:hover {
                 background-color: #008ba1;
             }
         }
-
-
     }
 
     .button__final {
+        @extend %boton;
         width: 30%;
-        background-color: var(--colorPrincipal);
-        color: var(--colorBlanco);
-        border: none;
-        padding: 1rem 2rem;
-        margin: 2rem 0;
-        transition: box-shadow .3s;
-        border-radius: .6rem;
+        margin-top: 2rem;
 
         &:hover {
-            box-shadow: 7px 5px 14px -6px rgba(109, 109, 109, 0.51);
+            box-shadow: $sombraGris
         }
-
     }
-
 }
+
 .section4 {
-    background-color: #000000;
-    color: #ffffff;
+    @extend %sectionNegra;
     padding: 3rem;
 
     .section4__titulo {
         text-align: center;
         font-size: 7rem;
-
     }
+
     .container {
         display: grid;
         grid-template-rows: repeat(3, 1fr);
         justify-content: center;
+
         .section4__container {
+            @extend %card;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
             padding: 2rem 6rem;
-            border: 2px solid var(--colorPrincipal);
-            border-radius: .6rem;
             transition: box-shadow .6s;
-
             &:hover {
-                box-shadow: 7px 5px 14px -6px var(--colorPrincipal)
+                box-shadow: $sombraNeon
             }
             .section4__imgp {
                 max-width: 7.5rem;
@@ -186,16 +161,13 @@
             .section4__h2 {
                 text-align: center;
                 font-size: 2.3rem;
-
             }
-
         }
-
     }
 }
 
 .section5 {
-    background-color: var(--colorFondo);
+    @extend %sectionGris;
     .section5__titulo {
         font-size: 7rem;
         text-align: center;
@@ -208,9 +180,11 @@
         background-color: #fffcfc98;
         transition: box-shadow .6s;
         cursor: pointer;
+
         &:hover {
-            box-shadow: 7px 5px 14px -6px rgba(109, 109, 109, 0.51)    
+            box-shadow: $sombraGris
         }
+
         .section5__subtitulo {
             background-color: #fffcfc98;
             font-size: 5rem;
@@ -218,6 +192,7 @@
             color: #008092;
 
         }
+
         .section5__img {
             padding: 1.5rem;
         }
@@ -231,69 +206,69 @@
 
     .section6__img {
         padding: 10rem;
-        border-radius: 10.6rem;      
+        border-radius: 10.6rem;
     }
+
     .section6__titulo {
         font-size: 5.5rem;
         margin-bottom: 5rem;
     }
+
     .section6__container {
         margin: 2rem 0;
         display: flex;
         align-items: center;
+
         .section6__imgp {
             max-width: 75px;
             margin-right: 1rem;
         }
-        .section6__texto{
+
+        .section6__texto {
             transition: color .3s;
-            &:hover{
+
+            &:hover {
                 color: #00a2bb;
             }
         }
 
     }
 }
+
 .section7 {
-    background-color: var(--colorFondo);
-    color: #ffffff;
+    @extend %sectionGris;
 
     .section7__titulo {
         font-size: 7rem;
         text-align: center;
         padding-top: 2rem;
-        color: var(--colorTipo);
+        color: $colorTipo;
         margin-bottom: 3rem;
     }
+
     .section7__div {
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         justify-content: center;
-        
 
         .section7__container {
+            @extend %card;
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            border: solid 2px var(--colorPrincipal);
-            border-radius: .6rem;
             margin: .8rem 7rem;
             padding: 1rem 2rem;
-            transition: box-shadow .3s;
 
             &:hover {
-                box-shadow: 7px 5px 14px -6px rgba(109, 109, 109, 0.51);
+                box-shadow: $sombraGris;
             }
 
             .section7__boton {
+                @extend %boton;
+                margin-bottom: 0;
                 background-color: #919191;
-                color: var(--colorBlanco);
-                border: none;
-                padding: 1rem 2rem;
-                transition: background-color .3s;
-                border-radius: .6rem;
-
+                color: $colorBlanco;
                 &:hover {
-                    background-color:var(--colorPrincipal);
+                    background-color: $colorPrincipal
                 }
             }
         }
@@ -304,24 +279,20 @@
                 box-shadow: none;
             }
         }
-
         .section7__ico {
             width: 6rem;
             margin: 1rem
         }
-
         .section7__p {
             margin: 1rem 2rem;
             line-height: 2.2;
-            color: var(--colorTipo);
+            color: $colorTipo;
 
         }
         .section7__boton {
+            @extend %boton;
             background-color: #919191;
-            color: #ffffff;
-            border: none;
-            padding: 1rem 2rem;
-            margin: 1rem 0;
+            color: $colorBlanco
         }
     }
 
@@ -331,18 +302,17 @@
     width: 100%;
     background-image: url(../img/contactanos.webp);
     background-repeat: no-repeat;
-    color: #ffffff;
+    color: $colorBlanco;
     padding: 3rem;
-    .section8__form{
+    .section8__form {
         display: flex;
         flex-direction: column;
         align-items: center;
         .section8__titulo {
             font-size: 5rem;
-            color:#3e3e3e;
+            color: #3e3e3e;
             margin-bottom: 2rem;
         }
-      
         .form__container {
             width: 40%;
             display: flex;
@@ -350,11 +320,10 @@
             align-items: center;
             justify-content: center;
             background: rgba(1, 127, 147, 0.623);
-            box-shadow: 7px 5px 14px -6px rgba(109, 109, 109, 0.51);
-            backdrop-filter: blur( 4px );
+            box-shadow: $sombraGris;
+            backdrop-filter: blur(4px);
             padding: 3rem;
             border-radius: .6rem;
-    
             .section8__input {
                 outline: none;
                 border: none;
@@ -362,87 +331,68 @@
                 padding: 1.5rem 1rem;
                 border-radius: .6rem;
                 transition: box-shadow .3s;
-                &:focus{
-                  box-shadow: 0px 5px 15px 0px rgba(60, 60, 60, 0.51) ;
+                &:focus {
+                    box-shadow: $sombraGris ;
                 }
             }
-            
-    
             .select__select {
                 width: 100%;
                 padding: 1.5rem 1rem;
                 margin: 1rem 0;
                 outline: none;
                 box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.51);
-    
                 option {
                     font-size: 2rem;
                 }
-    
             }
             .section8__boton {
+                @extend %boton;
                 background-color: #9b9b9bd2;
                 color: var(--colorBlanco);
-                font-weight: 900;
-                border: none;
-                padding: 1rem 2rem;
                 margin: 3rem 0 2rem 0;
-                transition: box-shadow .3s;
-                border-radius: 6px;
                 &:hover {
-                    box-shadow: 0px 5px 20px 0px rgba(109, 109, 109, 0.51)
+                    box-shadow: $sombraGris
                 }
             }
         }
     }
-    
-}
-.banner{
 
-    height: 100vh;
-    width: 100%;
 }
-.bannerContainer{
-    position: absolute;
-    top: 50%;
-    .baner__img{
-        width: 100%;
-    }
-}
-.emailBody{
+.emailBody {
     display: flex;
     height: 100vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
-    background-color: var(--colorFondo);
-        .container{
-            display: inherit;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-            border: solid 1px var(--colorPrincipal);
-            max-width: 600px;
-            height: 400px;
-            padding: 2rem;
+    background-color: $colorFondo;
+
+    .container {
+        display: inherit;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border: solid 2px $colorPrincipal;
+        max-width: 600px;
+        height: 400px;
+        padding: 2rem;
+        border-radius: .6rem;
+        box-shadow: 8px 16px 29px -9px rgba(109, 109, 109, 0.51);
+
+        .success {
+            width: 10rem;
+        }
+
+        .section7__boton {
+            @extend %boton;
+            background-color: #919191;
+            color: $colorBlanco;
             border-radius: .6rem;
-            box-shadow: 8px 16px 29px -9px rgba(109, 109, 109, 0.51);
-            .success{
-                width: 10rem;
+
+            &:hover {
+                background-color: $colorPrincipal
             }
-            .section7__boton{
-                background-color: #919191;
-                    color: var(--colorBlanco);
-                    border: none;
-                    padding: 1rem 2rem;
-                    transition: background-color .3s;
-                    border-radius: .6rem;
-    
-                    &:hover {
-                        background-color:var(--colorPrincipal);
-                    }
         }
-        }
-        
+    }
+
 }

@@ -2,18 +2,16 @@
     width: 17rem;
 }
 .propiedades__main{
-    background-color: var(--colorFondo);
-
+    background-color: $colorFondo;
     .section1{
         position: absolute;
         .section1__titulo{
-            font-family: 'Montserrat', sans-serif;
-            color: var(--colorBlanco);
+            color: $colorBlanco
         }    
     }
     .sectionPropiedades{
     width: 90%;
-    margin: 2rem auto 2rem auto;
+    margin: 2rem auto;
     padding: 4rem;
     border-radius: 1rem;
     .sectionPropiedades__container{
