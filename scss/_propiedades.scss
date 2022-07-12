@@ -5,20 +5,20 @@ main{
     color:$colorBlanco
 }
 .sectionPropiedades {
-    width: 90%;
     margin: 2rem auto;
     padding: 4rem;
     border-radius: 1rem;
 
     .sectionPropiedades__container {
-        width: 34rem;
         margin-top: 2rem;
 
         .contenedor__imagenes {
+            height: 30rem;
+            width: 34rem;
             .sectionPropiedades__prop {
-                object-fit: cover;
                 width: 100%;
-                height: 30rem;
+                height: 100%;
+                object-fit: cover;
                 border-radius: 0.3rem;
             }
 
