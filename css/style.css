@@ -403,8 +403,7 @@ main {
   .sectionPropiedades .sectionPropiedades__container {
     margin-top: 2rem; }
     .sectionPropiedades .sectionPropiedades__container .contenedor__imagenes {
-      height: 30rem;
-      width: 34rem; }
+      height: 30rem; }
       .sectionPropiedades .sectionPropiedades__container .contenedor__imagenes .sectionPropiedades__prop {
         width: 100%;
         height: 100%;
