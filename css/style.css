@@ -188,6 +188,7 @@ span.navbar-toggler-icon {
     font-size: 7rem;
     margin-bottom: 2rem; }
   .sectionPropiedades .sectionPropiedades__container {
+    width: 34rem;
     padding: 1rem;
     margin: .5rem; }
     .sectionPropiedades .sectionPropiedades__container:hover {
@@ -570,7 +571,7 @@ main {
       border: solid 2px #00798e;
       padding: 1.5rem;
       margin-bottom: 2rem;
-      box-shadow: 0px 5px 15px 0px rgba(74, 74, 74, 0.609); }
+      box-shadow: 7px 5px 14px -6px rgba(109, 109, 109, 0.51); }
       .section3 .section3__container .section3__flex {
         display: flex;
         flex-basis: 50%;
@@ -681,7 +682,7 @@ main {
         margin-top: 2rem;
         width: 3.5rem; } }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .section1 .bannerContainer .banner__img {
     width: 25rem; }
   .sectionPropiedades {
@@ -695,11 +696,11 @@ main {
         height: 6.5rem;
         width: 6.5rem; }
       .sectionPropiedades .propiedades .sectionPropiedades__titulo {
-        font-size: 1.2rem; }
+        font-size: 1.5rem; }
       .sectionPropiedades .propiedades .sectionPropiedades__button {
         font-size: 0px;
         text-align: center;
         content: none; }
         .sectionPropiedades .propiedades .sectionPropiedades__button::before {
           content: "Ver Más";
-          font-size: 1.2rem; } }
+          font-size: 1.4rem; } }

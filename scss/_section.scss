@@ -93,9 +93,9 @@
         font-size: 7rem;
         margin-bottom: 2rem;
     }
-
     .sectionPropiedades__container {
         @extend %card;
+        width: 34rem;
         padding: 1rem;
         margin: .5rem;
         &:hover {
